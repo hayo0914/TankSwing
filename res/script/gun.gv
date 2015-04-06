@@ -1,0 +1,76 @@
+function hvygun
+	shotA 0
+	wait 1
+	shotA 5
+	wait 1
+	shotA 10
+	wait 1
+	shotA 5
+	wait 1
+	shotA 0
+	wait 1
+	shotA -5
+	wait 1
+	shotA -10
+	wait 1
+	shotA -5
+	wait 1
+	shotSyncA 0
+	wait 15
+endfunction
+function magnum
+	shotSyncA 0
+	wait 100
+endfunction
+function ak47
+	shotA 0
+	wait 1
+	shotA -5
+	wait 1
+	shotA 0
+	wait 1
+	shotA 5
+	wait 1
+	shotSyncA 0
+	wait 50
+endfunction
+function handgun
+	shotA 0
+	wait 150
+	shotA 0
+	wait 150
+	shotSyncA 0
+	wait 25
+endfunction
+function shotgun
+	shotSyncA -15
+	shotSyncB -10
+	shotSyncB -5
+	shotSyncB 0
+	shotSyncB 5
+	shotSyncB 10
+	shotSyncB 15
+	wait 25
+endfunction
+function shotgun2
+	shotA -24
+	shotB -16
+	shotB -8
+	shotB 0
+	shotB 8
+	shotB 16
+	shotB 24
+	wait 300
+	shotSyncA -24
+	shotSyncB -16
+	shotSyncB -8
+	shotSyncB 0
+	shotSyncB 8
+	shotSyncB 16
+	shotSyncB 24
+	wait 10
+endfunction
+function snipe
+	shotSyncA 0
+	wait 25
+endfunction

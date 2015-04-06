@@ -1,0 +1,38 @@
+function test
+
+	#開始
+	stackpush 0
+	
+	#パラメタータ取得テスト
+	inget param
+	sysout stackpop
+	
+	#パラメタータ返却テスト
+	outpush out これが返り値です。
+	outget out
+	sysout stackpop
+	#outremove out
+	#outclear
+	
+	#計算テスト
+	stackpush 1.0
+	:as
+	if stacktop <= 5
+		#ウェイト
+		wait 1000
+		sysout stacktop
+		calc (1 + stackpop)
+		backto as
+	else
+		#do nothing
+	endif
+	
+	#結果表示
+	sysout stacktop
+	
+	:end
+	
+	#結果表示
+	sysout stacktop
+	
+endfunction

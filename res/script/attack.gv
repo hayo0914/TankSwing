@@ -1,0 +1,15 @@
+function attack
+	wkgoforward
+	stackpush  -1
+	:lp
+	wait 1
+	#•Šíidx‚ğ+1
+	calc stackpop + 1
+	atk stacktop
+	if stackpop == 0
+		#–¢”­“®‚Ì“Á”\‚ªc‚Á‚Ä‚¢‚é
+		backto lp
+	endif
+	wfgoback
+	syncoff
+endfunction
